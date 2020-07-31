@@ -37,34 +37,34 @@
     <h1>The Computer Project.</h1>
     <p style="text-align: center;">Promoting Learning by Supporting Educational Technology in the Chicago Area</p>
     <a href="https://forms.gle/f8VP5ycqkVuRJJ9f8" target="_blank" class="btn" style="color: white;">Donate a Device</a>
-    <a href="how_it_works.html" style="text-decoration: underline; color: white; font-size:  0.75em; margin-top: 2vh;"">Learn More</a>
+    <a href="how_it_works.html" style="text-decoration: underline; color: white; font-size:  0.75em; margin-top: 2vh;">Learn More</a>
     <span id="down">&#8595;</span>
   </header>
 
-  <div class="main">
-    <h3 style="text-align: center;"><strong>Buon appetito!</strong></h3>
+  <div class="main" style="background-color: white;">
+    <h2 style="text-align: center; margin-top: 2em;">
+  <a class="typewrite" data-period="2000" data-type='[ "Giving the Key to Education.", "Giving the Key to Creativity.", "Giving the Key to Opportunities.", "Giving the Key to Career Skills." ]'>
+    <span class="wrap"></span>
+  </a>
+</h2>
     <p>
-      Gelato is the Italian desert made of milk, sugar, and cream.
-    </p>
-    <p>While it may seem similar to ice cream, gelato has a completely different origin and production process. Gelato contains less air than ice cream, making the flavors much more intense (our pints are heavy).
-    </p>
-    <p>
-     
-Gelato also has a higher percentage of solids like chocolate and real sugar, giving it a smooth, silky texture.  Gelato has less fat than ice cream because there is less cream and more milk.  And our gelato is gluten-free.  We make it from scratch in very small batches with only the finest ingredients. 
-
-    </p>
-    <p>
-​Dillon Hollingsworth, budding adventurer and young entrepreneur, came up with the idea to create a gelato to capture the essence of the true Italian gelatos he experienced while on a recent trip to Italy.
-    </p>
-
-    <p>
-
-With so many brands and flavors available in supermarkets, Dillon believed that he could create a recipe that could accomplish what the gelatos in Italy did, and that was to “wow” the consumer.
+      From
 
     </p>
 
+    <h2 style="text-align: center;">Why?</h2>
+    <p >
+     Most students remember the day in mid-March of 2020 when they were forced to continue their learning through technology from the safety of their homes. As a student caught in the midst of a global pandemic, I embraced the opportunity to learn under new circumstances and continue my education through the rapidly immplemented E-Learning scenario. With the shift to E-Learning this past spring, I continued to hear from my peers that learning under remote circumstances proved to be “difficult” and “inconvenient”. However, I soon realized that relying on technology every single school day to give us the opportunity to continue our educations can go from “inconvenient” to detrimental to one’s academic progression when the technology required is simply not available to students. <strong>Helping to close this gap is our mission.</strong>
+
+   </p>
+
+   <p>
+
+     Whether a student is sharing a device with other students in the household or has to do without internet access entirely, they are being prevented from obtaining the education that they are entitled to at absolutely no fault of their own. By nature of the rapid shift to remote learning during the pandemic, many schools simply were not able to provide the technology required for shift as those who did not already provide devices to all students did not have the time or resources neccesary to do so, leaving many students to navigate these already difficult times with their own technology.
+    </p>
+
     <p>
-We think you will agree that there is something unique about our gelato.  To put it another way… it is really fun to eat!
+
     </p>
   
   </div>
@@ -84,6 +84,67 @@ window.onbeforeunload = function () {
     }, 1000);
   });
 });
+</script>
+
+<script type="text/javascript">
+  
+
+  var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === 'Giving the Key to') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid black}";
+        document.body.appendChild(css);
+    };
 </script>
 
 <script src="scripts/nav_bar_script.js"></script>
