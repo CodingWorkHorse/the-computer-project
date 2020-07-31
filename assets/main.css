@@ -1,0 +1,797 @@
+/** Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
+
+*
+{
+padding: 0px;
+margin: 0px;
+font-family: monospace;
+box-sizing: border-box;
+}
+
+header
+{
+
+	height: 90vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('http://baumcube.weebly.com/uploads/6/5/8/4/65844733/image-7-10-20-at-2-56-pm_orig.jpg');
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-size: cover;
+	justify-content: center;
+	margin-bottom: 30px;
+  color: white;
+}
+.main
+{
+	width: 90%;
+	max-width: 100%;
+	margin: 10px 5% 0 5%;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	/*padding: 15px;*/
+	background-color: #eee;
+	height: auto;
+  margin-bottom: 2em;
+}
+
+.flavor_header{
+  height: 90vh;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('http://baumcube.weebly.com/uploads/6/5/8/4/65844733/image-7-10-20-at-2-56-pm_orig.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  color: white;
+}
+
+.flavor_intro{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://www.phillymag.com/wp-content/uploads/sites/3/2019/06/best-gelato-philadelphia-gran-caffe-laquila.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  text-align: right;
+  background-size: cover;
+  justify-content: center;
+}
+
+.flavor_intro div{
+  border: solid 5px white;
+  color: white;
+  width: auto;
+  margin-left: 5%;
+  max-width: 30%;
+  max-height: 90%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.double_chocolate{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://www.dillonhollingsworthgelato.com/uploads/1/5/3/5/15358182/header_images/1456527451.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.double_chocolate div{
+  border: solid 5px white;
+  color: white;
+  width: auto;
+  max-width: 80%;
+  max-height: 65%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+
+
+.mint_chip{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://www.dillonhollingsworthgelato.com/uploads/1/5/3/5/15358182/header_images/1494370062.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.mint_chip div{
+  border: solid 5px white;
+  color: white;
+  width: auto;
+  max-width: 60%;
+  max-height: 65%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+
+
+.madagascar_vanilla{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('https://www.dillonhollingsworthgelato.com/uploads/1/5/3/5/15358182/header_images/1494375695.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.madagascar_vanilla div{
+  border: solid 5px white;
+  color: white;
+  width: auto;
+  max-width: 60%;
+  max-height: 65%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.main p
+{
+	padding: 10px;
+}
+#down
+{
+	position: absolute;
+	top:85vh;
+	size: 40px;
+	padding: 20px;
+	font-size: 2.5em;
+  color: white;
+}
+
+#down:hover
+{
+	cursor: pointer;
+	opacity: 0.8;
+  top: 84vh;
+}
+
+#down_to_flavor_1
+{
+  position: absolute;
+  top:185vh;
+  size: 40px;
+  padding: 20px;
+  font-size: 2.5em;
+  align-self: center;
+  color: white;
+}
+
+#down_to_flavor_1:hover
+{
+  cursor: pointer;
+  opacity: 0.8;
+  top: 184vh;
+}
+
+#down_to_flavor_2
+{
+  position: absolute;
+  top:285vh;
+  size: 40px;
+  padding: 20px;
+  font-size: 2.5em;
+  color: white;
+}
+
+#down_to_flavor_2:hover
+{
+  cursor: pointer;
+  opacity: 0.8;
+  top:284vh;
+}
+
+
+#down_to_flavor_3
+{
+  position: absolute;
+  top:385vh;
+  size: 40px;
+  padding: 20px;
+  font-size: 2.5em;
+  color: white;
+}
+
+#down_to_flavor_3:hover
+{
+  cursor: pointer;
+  opacity: 0.8;
+  top:384vh;
+}
+
+#return_to_top
+{
+  position: absolute;
+  top:485vh;
+  size: 40px;
+  padding: 20px;
+  font-size: 2.5em;
+  color: white;
+}
+
+#return_to_top:hover
+{
+  cursor: pointer;
+  opacity: 0.8;
+  top:484vh;
+}
+
+
+.footer-main-div{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: black;
+  padding:30px 0px;
+}
+.footer-social-icons{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.footer-social-icons ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-social-icons ul li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  border-radius: 100%;
+  background: #fff;
+  border: 2px solid black;
+}
+.footer-social-icons ul li a{
+  color: #272727;
+  font-size: 25px;
+  display: block;
+}
+.footer-social-icons ul li a i{
+  line-height: 50px;
+}
+.footer-social-icons ul li:hover{
+  background: black;
+  border: 2px solid white;
+}
+.footer-social-icons ul li:hover a{
+  color: white;
+}
+.footer-menu-one{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top:25px;
+}
+.footer-menu-one ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-menu-one ul li{
+  display: inline-block;
+  margin: 0px 15px;
+}
+.footer-menu-one ul li a{
+
+  color: #fff;
+  text-align: center;
+  padding: 4px 3px;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  text-decoration: none;
+  font-weight: 0.5em;
+  font-size: 13px;
+}
+.footer-menu-one ul li a:hover{
+  color: grey;
+}
+.footer-menu-two{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top:15px;
+}
+.footer-menu-two ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-menu-two ul li{
+  display: inline-block;
+  margin: 0px 15px;
+}
+.footer-menu-two ul li a{
+  font-family: trebuchet MS, Lato, verdana, arial, helvetica, sans-serif;
+  font-size:14px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.footer-menu-two ul li a:hover{
+  color: #32CD32;
+}
+.footer-bottom{
+  width: 100%;
+  height: auto;
+    margin: auto;
+    background: #32CD32;
+    padding: 10px;
+}
+.footer-bottom p{
+   font-family: trebuchet MS, Lato, verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer-bottom p a{
+  color: #fff;
+}
+.footer-bottom p a:hover{
+  color: #272727;
+}
+
+
+.btn {
+    /* Positioning and sizing */
+    width: auto;
+    
+    /* Padding and margins */
+    padding: 0.5em;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: black; 
+    text-decoration: none;
+    font-size: 1.5em;
+       letter-spacing: .02em;
+  -webkit-font-smoothing: antialiased;
+    
+    /* Border styles */
+    border: 5px solid white; 
+
+
+ -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.4s;
+
+}
+
+.btn:hover {
+ margin-top: 15px;
+border: 6px solid white; 
+ font-size: 1.75em;
+   letter-spacing: .02em;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+
+
+.current_header {
+  margin: 0;
+  font-family: trebuchet MS, Lato, verdana, arial, helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+
+
+
+}
+
+.login {
+background-color: black;
+border-color:black;
+  border-style: solid;
+  border-width: 0.1em;
+ float: right;
+  color: #fff;
+  text-align: center;
+  padding: 10px 18px;
+  margin-bottom: 0em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+ font-family: trebuchet MS, Lato, verdana, arial, helvetica, sans-serif;
+
+
+ -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+}
+
+.login:hover {
+  background-color: #fff; /* Green */
+  color: black;
+}
+
+.login_item{
+border-color:black;
+  border-style: solid;
+  border-width: 0.1em;
+  /*float: right; */
+  color: black;
+  text-align: center;
+  /*padding: 10px 18px; */
+  text-decoration: none;
+  display: inline-block;
+
+
+ -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.logout {
+  border-radius: 50%;
+background-color: black;
+border-color:black;
+  border-style: solid;
+  border-width: 0.1em;
+ float: right;
+  color: #fff;
+  text-align: center;
+  padding: 10px 18px;
+  margin-left: 1px;
+  margin-bottom: 0em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  
+
+
+ -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+}
+
+
+
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  text-decoration: none;
+  font-weight: 0.5em;
+  font-size: 13px;
+
+}
+
+.topnav p {
+   font-family: trebuchet MS, Lato, verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+
+}
+
+
+.topnav a:hover {
+  color: grey;
+}
+
+.topnav a.active {
+  color: red;
+}
+
+
+
+
+
+
+nav {
+    background: white;
+    padding: 0 15px;}
+a {
+    color: black;
+    text-decoration: none;
+}
+.menu,
+.submenu {   
+    list-style-type: none;
+}
+.logo {
+    font-size: 20px;
+    padding: 0px;
+}
+.item {
+    padding: 5px;
+}
+.item.button {
+    padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+
+.menu:hover{
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+.menu li.subitem a {
+    padding: 15px;
+}
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+.item.button {
+    order: 2;
+}
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.active .item {
+    display: block;
+}
+.button.secondary { /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
+}
+
+
+
+/* Submenu up from mobile screens */
+.submenu {
+    display: none;
+}
+.submenu-active .submenu {
+   display: block;
+}
+.has-submenu i {
+    font-size: 12px;
+}
+.has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900; 
+    content: "\f078";
+    color: black;
+    padding-left: 5px;
+}
+.subitem a {
+    padding: 10px 15px;
+}
+.submenu-active {
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+
+
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+    /* Button up from tablet screen */
+    .menu li.button a {
+        padding: 10px 15px;
+        margin: 5px 0;
+    }
+    .button a {
+        background: #0080ff;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button.secondary a {
+        background: transparent;
+    }
+    .button a:hover {
+        text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+    }
+}
+
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+    nav{
+      max-height: 10vh;
+    }
+    .menu {
+        align-items: flex-start;     
+        flex-wrap: nowrap;
+        background: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+        position: relative;
+        display: block; 
+        width: auto;
+    }
+    .button {
+        order: 2;
+    }
+    .submenu-active .submenu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 68px;
+        background: white;
+    }
+    .toggle {
+        display: none;
+    }
+    .submenu-active {
+        border-radius: 0;
+    }
+}
+
+
+
+
+
+
+.hero_2 {
+    /* Sizing */
+    width: 100vw;
+    height: 15vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://i.ytimg.com/vi/97pmSUtvLT4/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero_2 h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.hero_2 .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; 
+    text-decoration: none;
+    font-size: 1.5em;
+       font-family: trebuchet MS, Lato, verdana, arial, helvetica, sans-serif;
+    
+    /* Border styles */
+    border: 5px solid white; 
+
+
+ -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.4s;
+
+}
+
+.hero_2 .btn:hover {
+ margin-top: 45px;
+border: 6px solid white; 
+ font-size: 1.75em;
+
+}
+
+.main_yield{
+  min-height: 70vh;
+}
+
+
+.social-icons-contact{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5em;
+}
+.social-icons-contact ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.social-icons-contact ul li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  border-radius: 20%;
+}
+.social-icons-contact ul li a{
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+.social-icons-contact ul li a i{
+  line-height: 50px;
+}
+
+.contact_information_content{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  height: 200px;
+}
+
+
+
+/** Basic styling */
+body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+
+/** Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
+
+/** `main` element */
+main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
+
+/** Images */
+img { max-width: 100%; vertical-align: middle; }
+
+/** Headings */
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
